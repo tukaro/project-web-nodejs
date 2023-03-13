@@ -20,6 +20,9 @@ app.set('views', path.join(__dirname, 'resource/views'));
 app.get('/', (req, res) => {
   res.render('home');
 })
+app.get('/model', (req, res) => {
+  res.render('model');
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port htttp://localhost:${port}`);
